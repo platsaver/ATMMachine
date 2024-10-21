@@ -22,19 +22,20 @@ II) Project sẽ sử dụng các lớp sau:
 3) Lớp Main: Lớp này sẽ chịu trách nhiệm thực hiện việc khởi động, xác thực thông tin đăng nhập của người dùng; tạo ra menu tùy chọn các hoạt động trong tài khoản, đảm bảo cho ứng dụng được hoạt động liên tục cho đến khi người dùng đăng xuất; đăng xuất người dùng khỏi tài khoản
   - Cấu trúc của lớp Main:
     + Main noun: Main
-    + Auxiliary nouns:
-    + Verbs:
+    + Auxiliary nouns: op, object, authenticated
+    + Verbs: authenticated, viewBalance(), withdrawAmount(), depositAmount(), ViewMiniStatement(), break
   - Cấu trúc UML:
     + Fields:
       * ATMNumber, ATMPin, AttemptNumber, AttemptPin, option, withdraw, deposit: int
       * authenticated: boolean
       * op: OperationInterface
     + Method:
+      * main(args: String[]): void 
 4) Lớp OperationImplement: Lớp này sẽ chịu trách nhiệm thực hiện việc quản lý và thao tác dữ liệu người dùng dựa trên các phương thức được tạo ra ở lớp OperationImplement
   - Cấu trúc của lớp OpertaionImplement:
-    + Main noun
-    + Auxiliary nouns:
-    + Verbs:
+    + Main noun: OperationImplement
+    + Auxiliary nouns: atm, ministatement
+    + Verbs: viewBalance(), withdrawAmount(), depositAmount(), ViewMiniStatement()
   - Mô hình UML:
     + Fields:
       * atm: ATM
@@ -44,10 +45,10 @@ II) Project sẽ sử dụng các lớp sau:
 5) Lớp OperationInterface: Lớp này sẽ chịu trách nhiệm thực hiện việc xác định các hành động có thể thực hiện
   - Cấu trúc của lớp OperationInterface:
     + Main noun: OperationInterface
-    + Auxiliary nouns: 
-    + Verbs
+    + Auxiliary nouns:
+      * Do đây là phần sử dụng phương thức interface nên không sử dụng Auxiliary noun
+    + Verbs: viewBalance(), withdrawAmount(), depositAmount(), ViewMiniStatement()
   - Mô hình UML:
     + Fields:
     + Methods:
-      * OperationInterface{}: interface
       * viewBalance(), withdrawAmount(), depositAmount(), ViewMiniStatement(): void
