@@ -6,6 +6,7 @@ I) Project này sẽ thực hiện lại chức năng của một máy ATM, bao 
 4) Chuyển tiền vào tài khoản (Deposit Amount)
 5) Thống kê lại các biến động số dư trong tài khoản (View Mini Statement)
 6) Đăng xuất khỏi tài khoản (Exit)
+
 II) Project sẽ sử dụng các lớp sau:
 1) Lớp ATM: Lớp này sẽ chịu trách nhiệm thực hiện chức năng khởi tạo, lưu trữ dữ liệu và đặt lại dữ liệu cho biến:
   - Cấu trúc của lớp ATM:
