@@ -51,7 +51,7 @@ public class Main {
                 System.out.println("Balance fluctuation statistics: ");
                 op.ViewMiniStatement();
             } else if (option == 5) {
-                System.out.println("Collect your card!\nThanks for using our service!");
+                System.out.println("Thanks for using our service!");
                 break;
             } else {
                 System.out.println("Invalid option! Please try again.");
