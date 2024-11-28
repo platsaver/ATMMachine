@@ -17,8 +17,8 @@ import javax.swing.SwingConstants;
 
 public class ATMFrame extends JFrame {
     private ATM atm;
-    private JLabel welcomeLabel;
-    private JButton viewBalanceButton, withdrawButton, depositButton, viewStatementButton, exitButton;
+    JLabel welcomeLabel;
+    JButton viewBalanceButton, withdrawButton, depositButton, viewStatementButton, exitButton;
 
     public ATMFrame(String username) {
         atm = new ATM();
