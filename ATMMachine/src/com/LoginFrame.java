@@ -11,9 +11,9 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class LoginFrame extends JFrame{
-	private JTextField userIdField;
-    private JPasswordField passwordField;
-    private JButton loginButton;
+	JTextField userIdField;
+     JPasswordField passwordField;
+     JButton loginButton;
 
     public LoginFrame() {
         setTitle("ATM Login");
