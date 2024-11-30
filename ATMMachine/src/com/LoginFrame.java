@@ -68,7 +68,7 @@ public class LoginFrame extends JFrame{
                 String password = new String(passwordField.getPassword());
 
                 if (userId.equals("12345") && password.equals("123")) {
-                    dispose();
+                    setVisible(false);
                     new ATMFrame("User");
                 } else {
                     JOptionPane.showMessageDialog(LoginFrame.this,
