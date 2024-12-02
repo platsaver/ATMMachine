@@ -5,22 +5,22 @@ public class ATM {
 	private int depositBalance; 
 	private int withdrawBalance; 
 	
-	int getBalance() {
+	public int getBalance() {
 		return balance; 
 	}
-	void setBalance(int balance) {
+	public void setBalance(int balance) {
 		this.balance = balance; 
 	}
-	int getDeposit() {
+	public int getDeposit() {
 		return depositBalance; 
 	}
-	void setDeposit(int depositBalance) {
+	public void setDeposit(int depositBalance) {
 		this.depositBalance = depositBalance; 
 	}
-	int getWithdraw() {
+	public int getWithdraw() {
 		return withdrawBalance; 
 	}
-	void setWithdraw(int withdrawBalance) {
+	public void setWithdraw(int withdrawBalance) {
 		this.withdrawBalance = withdrawBalance; 
 	}
 }
