@@ -27,10 +27,15 @@ public class OperationImplement implements OperationInterface{
         }
 	}
 	public void depositAmount(int depositAmount) {
-		atm.setBalance(atm.getBalance()+depositAmount);
-		atm.setDeposit(depositAmount);
-		System.out.println("Your update balance: "+atm.getBalance()); 
-	}
+        if (depositAmount <= 0) {
+            System.out.println("Invalid amount of fund! Please try again");
+        }
+        else {
+        	atm.setBalance(atm.getBalance() + depositAmount);
+            atm.setDeposit(depositAmount);
+            System.out.println("Your updated balance: " + atm.getBalance());
+        }
+    }
 	public void ViewMiniStatement() {
 		System.out.println("Balance:\t\t"+atm.getBalance()); 
 		System.out.println("Withdraw Amount:\t"+atm.getWithdraw()); 
